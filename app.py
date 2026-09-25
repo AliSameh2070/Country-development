@@ -10,7 +10,7 @@ st.set_page_config(
     layout="centered"
 )
 
-df = pd.read_csv("original.csv")
+df = pd.read_csv("Country-data.csv")
 clustered_data = pd.read_csv("clustered_country_data.csv")
 
 st.title("🌍 Country Development")
