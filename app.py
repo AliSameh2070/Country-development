@@ -17,6 +17,13 @@ st.title("🌍 Country Development")
 
 st.write("Pick a country to see its development level.")
 
+country = st.selectbox(
+    "Choose a country",
+    df["country"].tolist(),
+    index=None,
+    placeholder="Select a country"
+)
+
 if country is not None:
 
     country_data = clustered_data[
